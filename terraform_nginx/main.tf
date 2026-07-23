@@ -81,17 +81,164 @@ systemctl enable nginx
 # Create a custom webpage
 cat <<HTML > /var/www/html/index.html
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>welcome to Terraform </title>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Terraform DevOps Project</title>
+
+<style>
+
+body{
+
+margin:0;
+
+padding:0;
+
+background:linear-gradient(135deg,#0f172a,#1e3a8a);
+
+font-family:Arial,Helvetica,sans-serif;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+height:100vh;
+
+color:white;
+
+}
+
+.container{
+
+background:rgba(255,255,255,0.08);
+
+padding:50px;
+
+border-radius:20px;
+
+width:700px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+
+}
+
+h1{
+
+font-size:42px;
+
+color:#38bdf8;
+
+margin-bottom:10px;
+
+}
+
+h2{
+
+color:#facc15;
+
+margin-bottom:30px;
+
+}
+
+ul{
+
+list-style:none;
+
+padding:0;
+
+font-size:22px;
+
+line-height:2;
+
+}
+
+.badge{
+
+display:inline-block;
+
+margin-top:20px;
+
+padding:12px 25px;
+
+background:#22c55e;
+
+border-radius:30px;
+
+font-size:20px;
+
+font-weight:bold;
+
+}
+
+.footer{
+
+margin-top:35px;
+
+font-size:22px;
+
+}
+
+.footer span{
+
+color:#38bdf8;
+
+font-weight:bold;
+
+}
+
+</style>
+
 </head>
-<body style="font-family:Arial;text-align:center;margin-top:80px;background:#f4f4f4;">
-    <h1>?? Hello from AWS EC2!</h1>
-    <h2>Nginx Installed Successfully</h2>
-    <p>This website was deployed automatically using <strong>Terraform</strong>.</p>
-    <p><strong>Operating System:</strong> Ubuntu</p>
-    <p><strong>Region:</strong> Mumbai (ap-south-1)</p>
+
+<body>
+
+<div class="container">
+
+<h1>?? Terraform Project</h1>
+
+<h2>AWS EC2 Instance Successfully Provisioned</h2>
+
+<ul>
+
+<li>? Ubuntu Server</li>
+
+<li>? Nginx Installed</li>
+
+<li>? Infrastructure as Code (Terraform)</li>
+
+<li>? AWS Cloud</li>
+
+<li>? Automated Deployment using user_data</li>
+
+</ul>
+
+<div class="badge">
+
+DevOps Project Completed Successfully
+
+</div>
+
+<div class="footer">
+
+Created by <span>Denit Joseph</span><br>
+
+Junior DevOps Engineer
+
+</div>
+
+</div>
+
 </body>
+
 </html>
 HTML
 
